@@ -37,4 +37,6 @@ function weekday(day) {
 }
 console.log(weekday(Week.Saturday));
 console.log(weekday(Week.Monday));
-// 4
+// 5
+console.log("HOLAAAAA");
+console.log("TEST");
