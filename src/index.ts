@@ -2,8 +2,7 @@
 const sum = (numOne: number, numTwo: number): Number => {
     return numOne + numTwo;
 }
-
-console.log(sum(888,112))
+console.log(sum(123,123))
 
 
 // 2.2
@@ -14,10 +13,9 @@ interface Car {
 }
 
 function shoWCarDetails(car: Car): String {
-    return `${car.make} ${car.model} ${car.year}`
+    return `${car.make} - Model: ${car.model} - Year: ${car.year}`
 }
-
-console.log(shoWCarDetails({make: 'Toyota', model: 'Hilux', year: 2004}))
+console.log(`This car is a: ${shoWCarDetails({make: 'Chevrolet', model: 'Optra', year: 2008})}`)
 
 
 //3.1
@@ -43,16 +41,15 @@ enum Week {
     Sunday
 }
 
-function weekday (day: Week): String{
+function weekDay (day: Week): String{
     if (day === Week.Saturday || day === Week.Sunday){
-        return 'This day is work'
+        return 'This day is not work, you can rest'
     } else {
-        return 'This day is not work'
+        return 'This day is work, you should work'
     }
 }
-
-console.log(weekday(Week.Saturday));
-console.log(weekday(Week.Monday));
+console.log(weekDay(Week.Saturday));
+console.log(weekDay(Week.Monday));
 
 
 // 5

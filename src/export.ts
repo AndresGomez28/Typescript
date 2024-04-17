@@ -1,10 +1,18 @@
-// 4.1.1 export
-export const sum = (numOne: number, numTwo: number): Number => {
-    return numOne + numTwo;
+// 4.1 export
+export enum Week {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
 }
 
-// 4.1.2 export
-const sumTwo = (numOne: number, numTwo: number): Number => {
-    return numOne + numTwo;
+export function weekDay (day: Week): String{
+    if (day === Week.Saturday || day === Week.Sunday){
+        return 'This day is not work, you can rest'
+    } else {
+        return 'This day is work, you should work'
+    }
 }
-export default sumTwo

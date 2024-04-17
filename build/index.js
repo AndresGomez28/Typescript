@@ -3,11 +3,11 @@
 const sum = (numOne, numTwo) => {
     return numOne + numTwo;
 };
-console.log(sum(888, 112));
+console.log(sum(123, 123));
 function shoWCarDetails(car) {
-    return `${car.make} ${car.model} ${car.year}`;
+    return `${car.make} - Model: ${car.model} - Year: ${car.year}`;
 }
-console.log(shoWCarDetails({ make: 'Toyota', model: 'Hilux', year: 2004 }));
+console.log(`This car is a: ${shoWCarDetails({ make: 'Chevrolet', model: 'Optra', year: 2008 })}`);
 //3.1
 function firstElement(array) {
     return array.length ? array[0] : null;
@@ -27,16 +27,14 @@ var Week;
     Week[Week["Saturday"] = 5] = "Saturday";
     Week[Week["Sunday"] = 6] = "Sunday";
 })(Week || (Week = {}));
-function weekday(day) {
+function weekDay(day) {
     if (day === Week.Saturday || day === Week.Sunday) {
-        return 'This day is work';
+        return 'This day is not work, you can rest';
     }
     else {
-        return 'This day is not work';
+        return 'This day is work, you should work';
     }
 }
-console.log(weekday(Week.Saturday));
-console.log(weekday(Week.Monday));
+console.log(weekDay(Week.Saturday));
+console.log(weekDay(Week.Monday));
 // 5
-console.log("HOLAAAAA");
-console.log("TEST");
