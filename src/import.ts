@@ -1,8 +1,8 @@
-// 4.1.1 import
-import { sum } from "./export";
+// 4.1 import
+import { weekDay, Week } from "./export";
 
-console.log(sum(22,33))
 
-// 4.1.2 import
-import sumTwo from "./export";
-console.log(sumTwo(33, 44));
+console.log(weekDay(Week.Wednesday));
+console.log(weekDay(Week.Thursday));
+console.log(weekDay(Week.Sunday));
+console.log(weekDay(Week.Thursday));
